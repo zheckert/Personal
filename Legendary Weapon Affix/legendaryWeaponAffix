@@ -1,0 +1,11 @@
+bluntWeaponPrefix = [crushing, smashing, blunt, flat,]
+
+edgedWeaponPrefix = [vorpal, scintillating, honed, cutting, slicing, chopping, sharp, ]
+
+WeaponAdjective = 
+
+edgedWeapon = [longsword, falchion, zweihander, short sword, bastard sword, great sword, "dagger", "kris", ]
+
+bluntWeapon = 
+
+Suffix
