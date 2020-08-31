@@ -6,7 +6,7 @@ let weaponAdjective = ["filth-encrusted ", "fetid ", "dirty ", "gem-encrusted ",
 const bladedType = ["longsword ", "broadsword ", "falchion ", "zweihander ", "short sword ", "claymore ", "greatsword ", "dagger ", "butcher's knife ", "kris ", "handaxe ", "greataxe ", "glaive ", "halberd ", "scimitar ", ]
 const bluntType = ["warhammer ", "mallet ", "club ", "maul ", "flail ", "mace ", "cane ", "knuckleduster ", "morningstar ", "cudgel ", "quarterstaff ", "sledgehammer", "stave ",]
 
-let suffix = ["darkness ", "light ", "flame ", "heat ", "explosions ", "thunderbolts ", "flames ", "ice ", "hatred ", "puissance ", "malevolence ", "potency ", "power ", "truth ", "might ", "carnage ", "legend ", "trauma ", "rage ", "fury ", "insanity ", "madness ", "divinity ", "caliginous funerals ", "eternal moonlight ", "ceaseless bloodthirst ", "holy requiems ", "unbridled magnificence ", "decrepit coffins ", "dessicated corpses ", "angelic radiance ","malignant cognizance ", "leprous convergence ", "the fungal blossoms", "wretched putrescence ", ]
+let suffix = ["darkness", "light", "flame", "heat", "explosions", "thunderbolts", "flames", "ice", "hatred", "puissance", "malevolence", "potency", "power", "truth", "might", "carnage", "legend", "trauma", "rage", "fury", "insanity", "madness", "divinity", "caliginous funerals", "eternal moonlight", "ceaseless bloodthirst", "holy requiems", "unbridled magnificence", "decrepit coffins", "dessicated corpses", "angelic radiance","malignant cognizance", "leprous convergence", "the fungal blossoms", "wretched putrescence", ]
 
 function legendaryWeaponGenerator(){
     let style = Math.floor(Math.random() * 2)
@@ -18,5 +18,3 @@ function legendaryWeaponGenerator(){
         return bluntWeapon;
     }
 }
-
-console.log(legendaryWeaponGenerator());
