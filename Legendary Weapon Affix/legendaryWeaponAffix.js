@@ -11,10 +11,10 @@ let suffix = ["darkness", "light", "flame", "heat", "explosions", "thunderbolts"
 function legendaryWeaponGenerator(){
     let style = Math.floor(Math.random() * 2)
     if(style === 0){
-        const bladedWeapon = bladed[Math.floor(Math.random()*blunt.length)] + " " + weaponAdjective[Math.floor(Math.random()*weaponAdjective.length)] + " " + bladedType[Math.floor(Math.random()*bluntType.length)] + " of " + suffix[Math.floor(Math.random()*suffix.length)];
+        const bladedWeapon = `${bladed[Math.floor(Math.random()*blunt.length)]} ${weaponAdjective[Math.floor(Math.random()*weaponAdjective.length)]} ${bladedType[Math.floor(Math.random()*bluntType.length)]} of ${suffix[Math.floor(Math.random()*suffix.length)]}`;
         return bladedWeapon;
     } else if(style === 1){
-        const bluntWeapon = blunt[Math.floor(Math.random()*blunt.length)] + " " + weaponAdjective[Math.floor(Math.random()*weaponAdjective.length)] + " " + bluntType[Math.floor(Math.random()*bluntType.length)] + " of " + suffix[Math.floor(Math.random()*suffix.length)];
+        const bluntWeapon = `${blunt[Math.floor(Math.random()*blunt.length)]} ${weaponAdjective[Math.floor(Math.random()*weaponAdjective.length)]} ${bluntType[Math.floor(Math.random()*bluntType.length)]} of ${suffix[Math.floor(Math.random()*suffix.length)]}`;
         return bluntWeapon;
     }
 }
