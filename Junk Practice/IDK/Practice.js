@@ -54,19 +54,77 @@
 // console.log(i)
 // }
 
-var input = "666666";
+// var input = "666666";
 
-try {
-  if(input == "") {
-    throw "Input cannot be empty";
-  } else if(input.length > 5) {
-    throw "Input is to big";
-  } else {
-    console.log("You code runs fine!");
+// try {
+//   if(input == "") {
+//     throw "Input cannot be empty";
+//   } else if(input.length > 5) {
+//     throw "Input is to big";
+//   } else {
+//     console.log("You code runs fine!");
+//   }
+// } catch(err) {
+//   console.log(err);
+// } finally {
+//   console.log("Runs no matter what");
+//   console.log("And the input was " + input);
+// }
+
+// console.log(this)
+
+// function People (age) {
+//   this.age = age
+//   // this.name = name
+//   // console.log(this.name)
+// }
+
+// let Samuel = new People(45)
+// let Sally = new People(3)
+
+// console.log(Samuel)
+
+// function highAndLow(numbers){
+//   parseInt(numbers);
+//   return Math.max(numbers) , Math.min(numbers);
+// }
+
+// console.log(highAndLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"))
+
+//I MADE THE BELOW PROGRAM ALL BY MYSELF!
+
+// function DNAStrand(dna){
+//   let arr = [];
+//   for(let i = 0; i < dna.length; i++){
+//     if(dna.charAt(i) === "A"){
+//        arr.push("T")
+//        }else if(dna.charAt(i) === "T"){
+//        arr.push("A")
+//        }else if(dna.charAt(i) === "C"){
+//        arr.push("G")
+//        }else if(dna.charAt(i) === "G"){
+//        arr.push("C")
+//        }
+// }
+// return arr.join("");
+// }
+// console.log(DNAStrand("ATTGC"));
+
+function countSheeps(arrayOfSheep) {
+    let sheepTotal = 0
+    for(let i = 0; i < arrayOfSheep.length; i++){
+      if(arrayOfSheep[i] === true){
+        sheepTotal++;
+      }
+    }
+    return `There are ${sheepTotal} sheeps in total`
   }
-} catch(err) {
-  console.log(err);
-} finally {
-  console.log("Runs no matter what");
-  console.log("And the input was " + input);
-}
+
+  var array1 = [true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true ];
+    
+console.log(countSheeps(array1))
