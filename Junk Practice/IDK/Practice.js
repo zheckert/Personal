@@ -110,21 +110,27 @@
 // }
 // console.log(DNAStrand("ATTGC"));
 
-function countSheeps(arrayOfSheep) {
-    let sheepTotal = 0
-    for(let i = 0; i < arrayOfSheep.length; i++){
-      if(arrayOfSheep[i] === true){
-        sheepTotal++;
-      }
-    }
-    return `There are ${sheepTotal} sheeps in total`
-  }
+// function countSheeps(arrayOfSheep) {
+//     let sheepTotal = 0
+//     for(let i = 0; i < arrayOfSheep.length; i++){
+//       if(arrayOfSheep[i] === true){
+//         sheepTotal++;
+//       }
+//     }
+//     return `There are ${sheepTotal} sheeps in total`
+//   }
 
-  var array1 = [true,  true,  true,  false,
-    true,  true,  true,  true ,
-    true,  false, true,  false,
-    true,  false, false, true ,
-    true,  true,  true,  true ,
-    false, false, true,  true ];
+//   var array1 = [true,  true,  true,  false,
+//     true,  true,  true,  true ,
+//     true,  false, true,  false,
+//     true,  false, false, true ,
+//     true,  true,  true,  true ,
+//     false, false, true,  true ];
     
-console.log(countSheeps(array1))
+// console.log(countSheeps(array1))
+
+function capitalizeNames(arr){
+  // your code here
+}
+
+console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
