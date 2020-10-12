@@ -130,7 +130,63 @@
 // console.log(countSheeps(array1))
 
 function capitalizeNames(arr){
-  // your code here
+  console.log(arr.map(str => str[0].toUpperCase() + str.slice(1).toLowerCase())) 
 }
 
 console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+// console.log(namesOnly([
+//   {
+//       name: "Angelina Jolie",
+//       age: 80
+//   },
+//   {
+//       name: "Eric Jones",
+//       age: 2
+//   },
+//   {
+//       name: "Paris Hilton",
+//       age: 5
+//   },
+//   {
+//       name: "Kayne West",
+//       age: 16
+//   },
+//   {
+//       name: "Bob Ziroll",
+//       age: 100
+//   }
+// ])); 
+
+// function namesOnly(arr){
+
+//   return arr.map(folks => folks.name)
+
+// }
+
+// function forTheDom(arr){
+//   return arr.map(dom => {
+//     return `<h1>${dom.name}<h1> `+`<h2>${dom.age}</h2>`
+//   })
+// }
+// console.log(forTheDom([
+//   {
+//       name: "Angelina Jolie",
+//       age: 80
+//   },
+//   {
+//       name: "Eric Jones",
+//       age: 2
+//   },
+//   {
+//       name: "Paris Hilton",
+//       age: 5
+//   },
+//   {
+//       name: "Kayne West",
+//       age: 16
+//   },
+//   {
+//       name: "Bob Ziroll",
+//       age: 100
+//   }
+// ])); 
