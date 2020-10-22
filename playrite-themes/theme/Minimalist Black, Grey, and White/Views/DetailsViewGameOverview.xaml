@@ -53,7 +53,7 @@
                                                         VerticalAlignment="Center"
                                                         Foreground="{DynamicResource TextBrush}">
                                                 <TextBlock.Effect>
-                                                    <DropShadowEffect ShadowDepth="3" RenderingBias="Quality"/>
+                                                    <DropShadowEffect ShadowDepth="0" RenderingBias="Quality"/>
                                                 </TextBlock.Effect>
                                             </TextBlock>
                                         </DockPanel>

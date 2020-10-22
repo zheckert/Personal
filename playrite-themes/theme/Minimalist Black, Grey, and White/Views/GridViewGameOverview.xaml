@@ -63,7 +63,7 @@
                                                TextWrapping="Wrap" DockPanel.Dock="Left"
                                                VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}">
                                         <TextBlock.Effect>
-                                            <DropShadowEffect ShadowDepth="3"/>
+                                            <DropShadowEffect ShadowDepth="0"/>
                                         </TextBlock.Effect>
                                     </TextBlock>
                                 </DockPanel>
