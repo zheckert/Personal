@@ -2,8 +2,14 @@
 
 //How would we turn this into something like that one PSP game that was a matcher? We could instantiate classes and have health and armor values and formulas to calculate damage.  Also add cool graphics
 
-//to debug: matching 3 doesn't remove jack (could have something to do with "undefined square error in the console"), and you can drag a square anywhere, meaning there currently aren't invalid moves, 
-//function(s) for removing blocks should be called after a move takes place, then remove setInterval function (Wouldn't this go at the end of a move, so check for matches at dragEnd? AND check for 4 before 3. Maybe we need to have it so a row of ANY length can be removed, with a more complicated score modifier?)
+//function(s) for removing blocks should be called after a move takes place, then remove setInterval function (Wouldn't this go at the end of a move, so check for matches at dragEnd? AND check for 4 before 3. We could wrap the checks and dropping functions into a function to make it easier to call it
+//Maybe we need to have it so a row of ANY length can be removed, with a more complicated score modifier?)
+//Need to add matches of 5
+//Need to only allow a move if there's a match
+// need to make sure rows are repopulating properly
+//need to add images
+//need to add animations
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const grid = document.querySelector(".grid")
@@ -12,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let score = 0
 
     const widgetColors = [
+        //"url(graphics/<file-name-here>"
         "F531B1",
         "AB22D4",
         "7231EB",
@@ -43,31 +50,27 @@ document.addEventListener("DOMContentLoaded", () => {
     squares.forEach(square =>  square.addEventListener("dragend", dragEnd))
     squares.forEach(square =>  square.addEventListener("dragover", dragOver))
     squares.forEach(square =>  square.addEventListener("dragenter", dragEnter))
-    squares.forEach(square =>  square.addEventListener("dragleave", dragLeave))    
+    // squares.forEach(square =>  square.addEventListener("dragleave", dragLeave))    
     squares.forEach(square =>  square.addEventListener("drop", dragDrop))
 
     function dragStart() {
         colorBeingDragged = this.style.backgroundColor
         squareIdBeingDragged = parseInt(this.id)
-        console.log(this.id, "dragStart")
     }
 
     function dragOver(e) {
         e.preventDefault()
-        console.log(this.id, "dragOver")
     }
 
     function dragEnter(e) {
         e.preventDefault()
-        console.log(this.id, "dragEnter")
     }
 
-    function dragLeave() {
-        console.log(this.id, "dragLeave")
-    }
+    // function dragLeave() {
+    //     this.style.backgroundImage = ""
+    // }
 
     function dragDrop() {
-        console.log(this.id, "dragDrop")
         colorBeingReplaced = this.style.backgroundColor
         squareIdBeingReplaced = parseInt(this.id)
         this.style.backgroundColor = colorBeingDragged
@@ -75,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function dragEnd() {
-        console.log(this.id, "dragEnd")
         let validMoves = [
             squareIdBeingDragged -1, 
             squareIdBeingDragged -width,
@@ -92,42 +94,21 @@ document.addEventListener("DOMContentLoaded", () => {
             squares[squareIdBeingDragged].style.backgroundColor = colorBeingDragged
         } else squares[squareIdBeingDragged].style.backgroundColor = colorBeingDragged
     }
-
-    function checkRowForThree() {
-        for (i = 0; i < 61; i++) {
-            let rowOfThree = [i, i+1, i+2]
-            let decidedColor = squares[i].style.backgroundColor
-            const isBlank = squares[i].style.backgroundColor === ""
-            
-            const notValid = [6, 7, 14, 15, 22, 23, 30, 31, 38, 39, 46, 47, 54, 55]
-            if (notValid.includes(i)) continue
-
-            if (rowOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {
-                score += 3
-                rowOfThree.forEach(index => {
-                squares[index].style.backgroundColor = ""
-                })
+    
+    function dropSquares(){
+        for (i = 0; i < 55; i++) {
+            if (squares[i + width].style.backgroundColor === ""){
+                squares[i + width].style.backgroundColor = squares[i].style.backgroundColor
+                squares[i].style.backgroundColor = ""
+                const rowOne = [0, 1, 2, 3, 4, 5, 6, 7]
+                const isRowOne = rowOne.includes(i)
+                if (isRowOne && squares[i].style.backgroundColor === ""){
+                    let randomColor = Math.floor(Math.random() * widgetColors.length)
+                    squares[i].style.backgroundcolor = widgetColors[randomColor]
+                }
             }
         }
     }
-    checkRowForThree()
-    
-    function checkColumnForThree() {
-        for (i = 0; i < 47; i++) {
-            let columnOfThree = [i, i+width, i+width*2]
-            let decidedColor = squares[i].style.backgroundColor
-            const isBlank = squares[i].style.backgroundColor === ""
-    
-            if (columnOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {
-                score += 3
-                columnOfThree.forEach(index => {
-                squares[index].style.backgroundColor = ""
-                })
-            }
-    
-        }
-    }
-    checkColumnForThree()
 
     function checkRowForFour() {
         for (i = 0; i < 60; i++) {
@@ -164,8 +145,45 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     checkColumnForFour()
+
+    function checkRowForThree() {
+        for (i = 0; i < 61; i++) {
+            let rowOfThree = [i, i+1, i+2]
+            let decidedColor = squares[i].style.backgroundColor
+            const isBlank = squares[i].style.backgroundColor === ""
+            
+            const notValid = [6, 7, 14, 15, 22, 23, 30, 31, 38, 39, 46, 47, 54, 55]
+            if (notValid.includes(i)) continue
+
+            if (rowOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {
+                score += 3
+                rowOfThree.forEach(index => {
+                squares[index].style.backgroundColor = ""
+                })
+            }
+        }
+    }
+    checkRowForThree()
+    
+    function checkColumnForThree() {
+        for (i = 0; i < 47; i++) {
+            let columnOfThree = [i, i+width, i+width*2]
+            let decidedColor = squares[i].style.backgroundColor
+            const isBlank = squares[i].style.backgroundColor === ""
+    
+            if (columnOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {
+                score += 3
+                columnOfThree.forEach(index => {
+                squares[index].style.backgroundColor = ""
+                })
+            }
+    
+        }
+    }
+    checkColumnForThree()
     
     window.setInterval(function(){
+        dropSquares()
         checkRowForFour()
         checkColumnForFour()
         checkRowForThree()
