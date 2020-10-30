@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+        margin: 0;
+        padding: 0;
+}
+
+.headerData {
+    display: flex;
+    border: 2px solid #241a59;
+    padding: 20px;
+}
+
+.bodyData {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 20px
+}
+
+/* Yikes, make this dry? */
+.notLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+/* .bodyData > div {
+
+} */
+
+.footerData {
+    display: flex;
+    justify-content: center;
+}
+
+.nameBackground {
+    background-color: #241a59;
+    color: #ffffff;
+    font-size: 42px;
+    margin: 0;
+    padding: 7px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
