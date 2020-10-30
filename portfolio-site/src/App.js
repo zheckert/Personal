@@ -10,11 +10,9 @@ export const App = () => {
         <div>
             <Header />
         </div>
-
         <div>
             <Body />
         </div>
-
         <div>
             <Footer/>
         </div>

@@ -1,19 +1,26 @@
 import React from "react"
+import testImg from "./other/test-img.jpg"
 
-//3 columns?
+//3 columns? Need to determine best way to display content + implement
 
 export const Body = () => {
     return(
         <>
         <div className="bodyData">
-            <div>
-                Dev
+            <div className="bodyContent">
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
             </div>
-            <div>
-                Voiceover
+            <div className="bodyContent">
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
             </div>
-            <div>
-                Art/Design
+            <div className="bodyContent">
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
+                <img className="imageTest" src={testImg} alt="This is just a test"/>
             </div>
         </div>
         

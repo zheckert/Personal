@@ -4,55 +4,81 @@
     font-family: 'Roboto', sans-serif;
 }
 
-div {
-        margin: 0;
-        padding: 0;
+/* Link information */
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Header Classes */
+.bodyData {
+    display: flex;
+    justify-content: center;
+    border: 2px  #241a59 solid;
+    margin: 0px 15% 0px 15%
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .headerData {
     display: flex;
-    border: 2px solid #241a59;
-    padding: 20px;
+    border-radius: 20px 2px;
+    justify-content: center;
+    width: 600px;
 }
 
-.bodyData {
+.headerPosition {
     display: flex;
     justify-content: center;
+    margin: 7% 0px 7% 0px ;
+}
+
+.iconAlign {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    color: #241a59;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.info-alt {
+    display: flex;
+    margin: 2px 0px 2px 0px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2px 2px 15px 2px;
+    background-color: #241a59;
+    color: #ffffff;
+    padding: 5px 0px 5px 0px;
+    font-weight: 900;
+    font-size: 17px;
 }
 
 .logo {
     margin: 20px
-}
-
-/* Yikes, make this dry? */
-.notLogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.personal {
-    display: flex;
-    justify-content: center;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-}
-
-.skills {
-    display: flex;
-    justify-content: center;
-}
-
-/* .bodyData > div {
-
-} */
-
-.footerData {
-    display: flex;
-    justify-content: center;
 }
 
 .nameBackground {
@@ -61,10 +87,36 @@ div {
     font-size: 42px;
     margin: 0;
     padding: 7px;
+    border-radius: 15px 2px 2px 2px;
+}
+.notLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.post {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+
+/* Body Classes */
+.bodyContent {
+    border: 2px solid #241a59;
+    margin: 2%
+}
+
+.imageTest {
+    /* need width to be responsive */
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Footer Classes */
+.footerData {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
 }
