@@ -107,6 +107,12 @@ a:active {
     margin: 2%
 }
 
+.bodyContentClass {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
 .imageTest {
     /* need width to be responsive */
     width: 500px;
