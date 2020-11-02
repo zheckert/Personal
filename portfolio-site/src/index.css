@@ -102,20 +102,23 @@ a:active {
 
 
 /* Body Classes */
-.bodyContent {
-    border: 2px solid #241a59;
-    margin: 2%
+
+.bodyData {
+    display: flex;
+    justify-content: space-around;
 }
 
 .bodyContentClass {
     display: flex;
     justify-content: space-between;
     margin: 10px;
+    border: 2px solid #241a59;
+    margin: 2%
 }
 
 .imageTest {
     /* need width to be responsive */
-    width: 500px;
+    width: 75%;
     display: flex;
     justify-content: space-evenly;
 }

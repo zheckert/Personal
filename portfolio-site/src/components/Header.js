@@ -5,6 +5,7 @@ import linkedIn from "./other/linkedIn.png"
 import gitHub from "./other/gitHub.png"
 
 //Need to replace "EMAIL ME" with a functional React form.
+//When I move to grayscale, I could have an animation style that moves onto items when I hover to add a splash of color, etc.
 
 export const Header = () => {
     return(
