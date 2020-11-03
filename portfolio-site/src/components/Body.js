@@ -1,12 +1,15 @@
 import React from "react"
-import testImg from "./other/test-img.jpg"
 import {BodyContent} from "./BodyContent"
 
 //3 columns? Need to determine best way to display content + implement.
 
 //I started working on the above but I need to fix it. I need to delete the old classes below and try again.
 
+//I could have grey overlays over the project until they're hovered over, and then I can show color.
+
 //Add about and/or skill proficiencies? photoshop, illustrator, css, html, js, react, ajax, axios, 
+
+//Include a way to download resume
 
 export const Body = () => {
     return(
