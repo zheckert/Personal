@@ -13,7 +13,6 @@ export const ColorChanger = () => {
     return(
         <div>
             <div style={bg} className="square">
-
             </div>
 
             <div>
