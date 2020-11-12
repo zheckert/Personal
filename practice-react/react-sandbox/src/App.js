@@ -2,6 +2,7 @@ import React from "react"
 import {Counter} from "./stuff/Counter"
 import {ColorChanger} from "./stuff/ColorChanger"
 import { LegendaryWeaponRandomizer } from "./stuff/LegendaryWeaponRandomizer"
+import { ToDo } from "./stuff/ToDo"
 
 export const App = () => {
     return(
@@ -15,6 +16,9 @@ export const App = () => {
         <div className="boundary">
             <LegendaryWeaponRandomizer />
         </div> 
+        <div className="boundary">
+            <ToDo />
+        </div>
         </>
     )
 }
