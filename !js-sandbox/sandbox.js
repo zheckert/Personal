@@ -234,3 +234,17 @@
 // // }
 // ]
 
+function countCharacters(arr) {
+	let num = 0
+	for (let i = 0; i < arr.join('').length; i++){
+		num++
+	}console.log(num) 
+}
+
+countCharacters([
+    '###',
+    '###',
+    '###'
+    ])
+
+    // https://edabit.com/challenge/nkp5xkZwbBH5Ape8b
