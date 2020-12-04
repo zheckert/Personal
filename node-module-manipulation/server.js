@@ -1,10 +1,21 @@
 const express = require("express")
 const app = express()
 
-
+const users = [
+    { name: "Zach", age: 30 },
+    { name: "Fred", age: 65 },
+    { name: "George", age: 34 },
+    { name: "Giselle", age: 26 },
+    { name: "Louise", age: 34 },
+    { name: "Bruno", age: 14 },
+    { name: "Gertrude", age: 45 },
+    { name: "YES", age: 45 },
+    { name: "test", age: 45 },
+]
 // request, response, but we shorten it
-app.get("/userdata", (req, res) => {
-    res.send({name: "zach", age: 20})
+app.get("/users", (req, res) => {
+
+    res.send(users)
 })
 // app.put()
 // app.post()
