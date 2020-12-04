@@ -1,4 +1,16 @@
+
+
+
+
+
 // let vomit = [
+
+// += is the addition assignment operator. This operator adds the value on the right of the operator to the variable on the left. The resultant value is then assigned to the variable on the left.
+
+// let assignment = (num) => {
+//     return num += 5
+// } 
+// console.log(assignment(3))
 
 // //1
 // // var peopleArray = [
@@ -234,17 +246,37 @@
 // // }
 // ]
 
-function countCharacters(arr) {
-	let num = 0
-	for (let i = 0; i < arr.join('').length; i++){
-		num++
-	}console.log(num) 
-}
+// function countCharacters(arr) {
+// 	let num = 0
+// 	for (let i = 0; i < arr.join('').length; i++){
+// 		num++
+// 	}console.log(num) 
+// }
 
-countCharacters([
-    '###',
-    '###',
-    '###'
-    ])
+// countCharacters([
+//     '###',
+//     '###',
+//     '###'
+//     ])
 
     // https://edabit.com/challenge/nkp5xkZwbBH5Ape8b
+
+    // function sumOfCubes(nums) {
+    //     let final = 0
+    //     for (let i = 0; i < nums.length; i++){
+    //         // Math.pow(nums[i], 3)
+    //         final += nums.length[i] ** 3
+    //     }
+    //     return final
+    // }
+    
+    // console.log(sumOfCubes([1, 5 , 9])
+
+    // function countCode(arr) {  
+    //     let total = 0
+    //     for(let i = 0; i < arr.length; i++){
+    //         arr[i] === "code" && total++
+    //     }return total
+    // }
+    
+    // console.log(countCode(["code", "code", "cool", "code"]))
