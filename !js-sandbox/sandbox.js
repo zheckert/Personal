@@ -1,9 +1,22 @@
+//Find the sum of all natural numbers from array.
+
+let addArray = (arr) => {
+    // let sum = 0
+    // for(let i = 0; i < arr.length; i++){
+    //     sum += arr[i]
+    // }
+    // return sum
+    
+}
+
+console.log(addArray([1, 3, 5, 7, 9]));
+console.log(addArray([10, 30, 50, 70, 90]));
 
 
 
 
 
-// let vomit = [
+// let tests = [
 
 // += is the addition assignment operator. This operator adds the value on the right of the operator to the variable on the left. The resultant value is then assigned to the variable on the left.
 
