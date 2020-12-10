@@ -1,1 +1,0 @@
-Everything in the "stuff" folder doesn't really need to exist, but I'm nostalgic about it. Actually, since I pushed everything to github, I'll probably delete later, idk
