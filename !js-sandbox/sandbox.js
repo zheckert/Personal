@@ -1,22 +1,35 @@
-//Find the sum of all natural numbers from array.
-
-let addArray = (arr) => {
-    // let sum = 0
-    // for(let i = 0; i < arr.length; i++){
-    //     sum += arr[i]
-    // }
-    // return sum
-    
+const vomitevol = (array) => {
+    let newArray = []
+    for(let i = 0; i < array.length; i++){
+        newArray.push(String(array[i]))
+    }return newArray.join("")
+    //keeping the below code as a test case because it's interesting
+    // return array
 }
 
-console.log(addArray([1, 3, 5, 7, 9]));
-console.log(addArray([10, 30, 50, 70, 90]));
+console.log(vomitevol([4, -56, true, "box", null]))
 
 
 
 
 
 // let tests = [
+
+//Find the sum of all natural numbers from array.
+
+// let addArray = (arr) => {
+//     // let sum = 0
+//     // for(let i = 0; i < arr.length; i++){
+//     //     sum += arr[i]
+//     // }
+//     // return sum
+    
+// }
+
+// console.log(addArray([1, 3, 5, 7, 9]));
+// console.log(addArray([10, 30, 50, 70, 90]));
+
+
 
 // += is the addition assignment operator. This operator adds the value on the right of the operator to the variable on the left. The resultant value is then assigned to the variable on the left.
 
