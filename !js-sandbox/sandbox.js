@@ -1,20 +1,27 @@
-const vomitevol = (array) => {
-    let newArray = []
-    for(let i = 0; i < array.length; i++){
-        newArray.push(String(array[i]))
-    }return newArray.join("")
-    //keeping the below code as a test case because it's interesting
-    // return array
-}
-
-console.log(vomitevol([4, -56, true, "box", null]))
-
-
-
-
-
 // let tests = [
+    // //should be 900
+// //if your numbers start as a string, you can alter them with the unary plus operator before you add them to the total, i.e. total += +nums[i]
+// const nums = ['100','300','400','60','40'];
+// // const nums = [100,300,400,60,40];
+// let total = 0
 
+// for(let i = 0; i < nums.length; i++){
+    
+//     total += +nums[i]
+// }
+// console.log(total)
+//----------------------------------------------------------------------------------
+    // const vomitevol = (array) => {
+    //     let newArray = []
+    //     for(let i = 0; i < array.length; i++){
+    //         newArray.push(String(array[i]))
+    //     }return newArray.join("")
+    //     //keeping the below code as a test case because it's interesting
+    //     // return array
+    // }
+    
+    // console.log(vomitevol([4, -56, true, "box", null]))
+//----------------------------------------------------------------------------------    
 //Find the sum of all natural numbers from array.
 
 // let addArray = (arr) => {
@@ -29,7 +36,7 @@ console.log(vomitevol([4, -56, true, "box", null]))
 // console.log(addArray([1, 3, 5, 7, 9]));
 // console.log(addArray([10, 30, 50, 70, 90]));
 
-
+//----------------------------------------------------------------------------------
 
 // += is the addition assignment operator. This operator adds the value on the right of the operator to the variable on the left. The resultant value is then assigned to the variable on the left.
 
