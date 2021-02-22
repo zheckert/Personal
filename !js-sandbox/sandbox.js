@@ -1,4 +1,25 @@
 // let tests = [
+// console.log(parseInt("-1"))
+
+//first turn string into an array
+//second remove spaces
+//third turn into an array of numbers
+//finally, return the lowest and highest values, using object literals to return them to strings
+ 
+// let nums = Array.from(numbers)
+// let filtered = nums.filter((num) => num != " ")
+// let numArray = filtered.map(Number)
+
+//working solution is below: 
+// function highAndLow(numbers){
+//     let numArray = numbers.split(" ").map(Number);
+//     let max = Math.max(...numArray)
+//     let min = Math.min(...numArray)
+//     return `${max} ${min}`
+//   }
+
+// console.log(highAndLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"))
+//----------------------------------------------------------------------------------
     // //should be 900
 // //if your numbers start as a string, you can alter them with the unary plus operator before you add them to the total, i.e. total += +nums[i]
 // const nums = ['100','300','400','60','40'];
@@ -313,3 +334,16 @@
     // }
     
     // console.log(countCode(["code", "code", "cool", "code"]))
+
+    // function sumArray(array) {
+        //     let total = 0
+        //     let sorted = array.sort(function(a, b){return a-b})
+        //     let arr = sorted.slice(1, -1)
+        //     for(let i = 0; i < arr.length; i++){
+        //         total += arr[i]
+        //     }
+        //     return total
+        // }
+        // console.log(sumArray([ 6, 2, 1, 8, 10 ]))
+        
+        
