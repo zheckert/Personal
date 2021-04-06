@@ -23,3 +23,31 @@ code {
   padding: 10px;
   width: 15%;
 }
+
+
+/* center in the middle of the page */
+
+.absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridCenter{
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.testCenter{
+  display: flex;
+  margin: auto;
+}
+
